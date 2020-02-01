@@ -6,6 +6,7 @@ import DevTools from "./DevTools";
 import StyledContainer from "../components/styledContainer";
 import GlobalStyles from "../GlobalStyles";
 import theme from "../constants/theme";
+import App from "../components/App";
 
 const Root = () => {
   return (
@@ -13,6 +14,7 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <StyledContainer>
+          <App />
           <DevTools />
         </StyledContainer>
       </ThemeProvider>
