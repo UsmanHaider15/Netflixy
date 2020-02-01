@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
-  background: #333852;
+  background: ${props => props.theme.primaryBg};
   min-height: 100vh;
   display: flex;
   justify-content: center;
