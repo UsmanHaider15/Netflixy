@@ -2,13 +2,14 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "../store";
 import DevTools from "./DevTools";
+import StyledContainer from "../components/styledContainer";
+
 const Root = () => {
   return (
     <Provider store={store}>
-      <div>
-        <h1>Hello, Root Component </h1>
+      <StyledContainer>
         <DevTools />
-      </div>
+      </StyledContainer>
     </Provider>
   );
 };
