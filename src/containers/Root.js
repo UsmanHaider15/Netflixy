@@ -7,6 +7,7 @@ import StyledContainer from "../components/styledContainer";
 import GlobalStyles from "../GlobalStyles";
 import theme from "../constants/theme";
 import App from "../components/App";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const Root = () => {
   return (
@@ -14,7 +15,9 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <StyledContainer>
-          <App />
+          <Router>
+            <App />
+          </Router>
           <DevTools />
         </StyledContainer>
       </ThemeProvider>
